@@ -57,7 +57,12 @@ public class TwoSum {
 		return nums;
         
     }
-    
+    /**
+     * This two sum willl give value but our question is to get index of that values
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int[] twoSum1(int[] nums,int target) {
     	int[] sol= {-1,-1};
     	HashMap<Integer,Integer> map=new HashMap<Integer, Integer>();
@@ -69,6 +74,24 @@ public class TwoSum {
     		}
     	}
     	
+    	return sol;
+    }
+    /**
+     * it gives index 
+     * @param nums
+     * @param target
+     * @return
+     */
+    public static int[] twoSum2(int[] nums,int target) {
+    	int[] sol= {-1,-1};
+    	HashMap<Integer,Integer> map=new HashMap<Integer, Integer>();
+    	for(int i=0;i<nums.length;i++) {
+    		map.put(nums[i], i);
+    		if(map.get(target-nums[i])!=null) {
+    			sol[0]=i;
+    			sol[1]=map.get(target-nums[i]);
+    		}
+    	}
     	return sol;
     }
 }

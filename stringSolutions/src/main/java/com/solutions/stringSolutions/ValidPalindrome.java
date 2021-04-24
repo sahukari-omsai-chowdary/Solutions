@@ -25,7 +25,8 @@ public class ValidPalindrome {
 
 	}
 	/**
-	 * 
+	 * Runtime: 3 ms, faster than 61.39% of Java online submissions for Valid Palindrome.
+Memory Usage: 38.8 MB, less than 79.69% of Java online submissions for Valid Palindrome.
 	 * @param s -the string to verify
 	 * @return -{@code true} if string is palidrome;
      *          {@code false} otherwise.
